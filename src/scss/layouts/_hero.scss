@@ -34,11 +34,10 @@
   }
 
   &__logo {
-    width: 220px;
     height: auto;
     margin: 0 auto rem(40);
     @include bp_md {
-      width: 350px;
+      width: 155px;
     }
   }
 
@@ -47,22 +46,21 @@
     top: 38%;
     transform: translateY(-38%);
     left: 0;
-    text-align: center;
-    color: $color-white;
+    //text-align: center;
     z-index: 10;
+    font-size: rem(18);
     @include bp_md {
       margin: 0 auto;
-      max-width: 65%;
+      max-width: 70%;
     }
   }
 
   &__title {
-    font-weight: 300;
-    font-size: rem(22);
-    color: $color-white;
-    margin-bottom: 10px;
+    font-size: rem(36);
+    color: $color-body;
+    margin-bottom: rem(20);
     @include bp_md {
-      font-size: rem(26);
+      font-size: rem(48);
     }
   }
 
@@ -77,13 +75,13 @@
 }
 
 .hero__left {
-  background: $color-primary;
+  background: $color-secondary;
   @media (max-width: 800px) {
-    background: url("../img/bg-cactus.jpg") center 50% no-repeat;
+    background: url("../img/bg2.jpg") center 50% no-repeat;
     &:before {
       content: "";
       position: absolute;
-      background: rgba($color-primary, 0.95);
+      background: rgba($color-secondary, 0.85);
       left: 0;
       top: 0;
       width: 100%;
@@ -93,17 +91,28 @@
 }
 
 .hero__right {
-  background: url("../img/bg-cactus.jpg") center center no-repeat;
+  position: relative;
+  background: url("../img/bg2.jpg") center center no-repeat;
   background-size: cover;
   @media (max-width: 800px) {
     display: none;
+  }
+  &:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background: rgba($color-body, 0.5);
+    z-index: 1;
   }
 }
 
 .hero__left,
 .hero__right {
-  flex-basis: 100%;
-  @include bp_md {
-    flex-basis: 50%;
+  width: 100%;
+  @media (min-width: 800px) {
+    width: 50%;
   }
 }
