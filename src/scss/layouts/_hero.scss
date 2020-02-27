@@ -1,0 +1,109 @@
+/*********************************************************
+    Hero
+*********************************************************/
+.hero {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+  height: 100vh;
+
+  &--has-overlay {
+    &:after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      width: 100%;
+      background: rgba($color-secondary, 0.6);
+      z-index: 1;
+    }
+  }
+
+  &--bg-gradient {
+    background-color: $color-secondary;
+    background-image: linear-gradient(
+      120deg,
+      $color-secondary,
+      $color-secondary-dark
+    );
+  }
+
+  &__background-image {
+    height: 100%;
+  }
+
+  &__logo {
+    width: 220px;
+    height: auto;
+    margin: 0 auto rem(40);
+    @include bp_md {
+      width: 350px;
+    }
+  }
+
+  &__content {
+    position: relative;
+    top: 38%;
+    transform: translateY(-38%);
+    left: 0;
+    text-align: center;
+    color: $color-white;
+    z-index: 10;
+    @include bp_md {
+      margin: 0 auto;
+      max-width: 65%;
+    }
+  }
+
+  &__title {
+    font-weight: 300;
+    font-size: rem(22);
+    color: $color-white;
+    margin-bottom: 10px;
+    @include bp_md {
+      font-size: rem(26);
+    }
+  }
+
+  &__subtitle {
+    font-weight: 100;
+    margin: 0;
+  }
+
+  &__btn-container {
+    margin-top: 20px;
+  }
+}
+
+.hero__left {
+  background: $color-primary;
+  @media (max-width: 800px) {
+    background: url("../img/bg-cactus.jpg") center 50% no-repeat;
+    &:before {
+      content: "";
+      position: absolute;
+      background: rgba($color-primary, 0.95);
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+.hero__right {
+  background: url("../img/bg-cactus.jpg") center center no-repeat;
+  background-size: cover;
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+
+.hero__left,
+.hero__right {
+  flex-basis: 100%;
+  @include bp_md {
+    flex-basis: 50%;
+  }
+}

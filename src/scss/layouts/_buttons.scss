@@ -1,0 +1,60 @@
+/*********************************************************
+    Buttons
+*********************************************************/
+
+.btn {
+  display: inline-block;
+  padding: 0 rem(30);
+  height: rem(50);
+  line-height: rem(50);
+  font-size: font-scale(0);
+  color: $color-white;
+  background-color: $color-primary;
+  border-radius: 0;
+  border: 0;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  white-space: nowrap;
+  cursor: pointer;
+  transition: all 0.2s linear;
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $color-white;
+    background-color: $color-primary-dark;
+  }
+  &--secondary {
+    background-color: $color-secondary;
+    border: 0;
+    color: $color-body;
+    &:hover,
+    &:focus {
+      background-color: $color-secondary-dark;
+    }
+  }
+  &--muted {
+    color: $color-primary;
+    background-color: transparent;
+    border-color: $color-primary;
+    &:hover,
+    &:focus {
+      background-color: $color-primary;
+      border-color: $color-primary-dark;
+    }
+  }
+  &--large {
+    padding: rem(15) rem(25);
+    font-size: rem(18);
+  }
+  &--disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+  }
+  &--block {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 100%;
+  }
+}

@@ -1,0 +1,104 @@
+/*********************************************************
+    Form
+*********************************************************/
+
+fieldset {
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+label,
+.form>.form__label {
+    display: block;
+    margin-bottom: 0.2rem;
+}
+
+input[type='email'],
+input[type='number'],
+input[type='password'],
+input[type='search'],
+input[type='tel'],
+input[type='text'],
+input[type='url'],
+textarea {
+    display: inline-block;
+    width: 100%;
+    height: rem(45);
+    line-height: rem(45);
+    margin-bottom: rem(18);
+    padding: 0 rem(10);
+    font-family: inherit;
+    font-size: 1rem;
+    color: $color-body;
+    border: 1px solid $color-border-base;
+    border-radius: 0;
+    box-shadow: inset 0 1px 2px rgba(10, 10, 10, .1);
+    outline: none;
+    transition: 0.2s all ease-out;
+    &:focus,
+    &:active {
+        border-color: $color-primary;
+    }
+}
+
+textarea {
+    max-width: 100%;
+}
+
+.form {
+    &__btn-container {
+        @include bp_md {
+            float: right;
+        }
+    }
+}
+
+.form {
+    &__input {
+        &--success {
+            border-color: $color-success!important;
+        }
+        &--error {
+            border-color: $color-error!important;
+        }
+    }
+}
+
+// Form Inline
+.form-inline {
+    display: inline-block;
+    margin-bottom: 0;
+    vertical-align: middle;
+    .form-group {
+        display: inline-block;
+    }
+    input {
+        width: auto;
+    }
+}
+
+// Form inline placehoders
+.form-inline-placeholders {
+    .form-group input:focus {
+        position: relative;
+        background: white;
+    }
+    .form-group label {
+        position: absolute;
+        line-height: 3rem;
+        padding-left: rem(10);
+        pointer-events: none; //allows click into
+    }
+}
+
+// Field Input Search
+.field-search {
+    display: flex;
+    justify-content: flex-start;
+    .btn {
+        margin-left: -2px;
+        border-top-left-radius: 0;
+        border-bottom-left-radius: 0;
+    }
+}

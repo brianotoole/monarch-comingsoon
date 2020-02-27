@@ -1,0 +1,22 @@
+/*********************************************************
+    Footer
+*********************************************************/
+
+.footer {
+  position: absolute;
+  background: $color-primary;
+  width: 100%;
+  right: 0;
+  bottom: 0;
+  padding: rem(20) 0 0;
+  text-align: center;
+
+  &--has-border {
+    border-top: 1px solid rgba($color-white, 0.2);
+  }
+
+  &__copyright,
+  &__copyright a {
+    color: $color-white;
+  }
+}
