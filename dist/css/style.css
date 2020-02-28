@@ -820,7 +820,9 @@ textarea {
 textarea {
   max-width: 100%;
   height: 80px;
-  line-height: 1.3; }
+  line-height: 1.3;
+  padding-top: 0.625rem;
+  padding-bottom: 0.625rem; }
 
 .form {
   padding-bottom: 10px; }
