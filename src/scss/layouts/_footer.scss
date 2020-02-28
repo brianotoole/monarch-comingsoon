@@ -8,7 +8,8 @@
   width: 100%;
   right: 0;
   bottom: 0;
-  padding: rem(20) 0 0;
+  padding: rem(12) 0 0;
+  margin-bottom: rem(-12);
   text-align: center;
   z-index: 2;
   @media (max-width: 800px) {
@@ -21,6 +22,7 @@
 
   &__copyright,
   &__copyright a {
+    font-size: rem(14);
     color: $color-white;
   }
 }

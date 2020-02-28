@@ -24,9 +24,9 @@ input[type="url"],
 textarea {
   display: inline-block;
   width: 100%;
-  height: rem(50);
-  line-height: rem(50);
-  margin-bottom: rem(18);
+  height: rem(42);
+  line-height: rem(42);
+  margin-bottom: rem(15);
   margin-right: rem(5);
   padding: 0 rem(10);
   font-family: inherit;
@@ -40,10 +40,12 @@ textarea {
   transition: 0.2s all ease-out;
   &:focus,
   &:active {
-    border-color: $color-primary;
+    border-color: #000;
+    background: darken($color-white, 7%);
   }
   @media (max-width: $bp_md) {
-      border-width: 2px;;
+    height: rem(50);
+    line-height: rem(50);
   }
 }
 
@@ -253,9 +255,9 @@ svg > .checkmark-check {
 [type="checkbox"]:checked + label:after {
   content: "\2713\0020";
   position: absolute;
-  top: 0;
-  left: 4px;
-  font-size: 1.3em;
+  top: -8px;
+  left: 3px;
+  font-size: 29px;
   line-height: 0.8;
   color: $color-body;
   transition: all 0.2s;
@@ -287,6 +289,10 @@ svg > .checkmark-check {
 [type="checkbox"]:checked:focus + label:before,
 [type="checkbox"]:not(:checked):focus + label:before {
   border: 2px dotted $color-body;
+}
+
+label {
+  font-size: rem(16);
 }
 
 /* hover style just for information */

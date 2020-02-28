@@ -42,7 +42,7 @@
     height: auto;
     margin: 0 auto rem(20);
     @include bp_md {
-      width: 155px;
+      width: 140px;
     }
   }
 
@@ -74,6 +74,10 @@
     @include bp_md {
       font-size: rem(42);
     }
+  }
+
+  p {
+    font-size: rem(16);
   }
 
   &__subtitle {
