@@ -8,7 +8,7 @@
 $color-primary: #264259;
 $color-secondary: #fcfcfc;
 $color-white: #fff;
-$color-body: #111;
+$color-body: #222;
 
 $color-primary-dark: darken($color-primary, 15%);
 $color-secondary-dark: darken($color-secondary, 15%);
@@ -25,8 +25,8 @@ $font-base-font-size: 1rem;
 $font-ratio: 1.2;
 $font-base-line-height: 1.5;
 
-$font-heading: "Montserrat", sans-serif;
-$font-body: "Heebo", sans-serif;
+$font-heading: "Lora", sans-serif;
+$font-body: "Muli", sans-serif;
 
 /*********************************************************
     Responsive Breakpoints

@@ -86,67 +86,76 @@ h1, h2, h3, h4, h5, h6 {
     Clearfix
     Usage: @include clearFix()
 *********************************************************/
-/* hebrew */
-@font-face {
-  font-family: 'Heebo';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Heebo"), local("Heebo-Regular"), url(https://fonts.gstatic.com/s/heebo/v5/NGS6v5_NC0k9P9H0TbFhsqMA6aw.woff2) format("woff2");
-  unicode-range: U+0590-05FF, U+20AA, U+25CC, U+FB1D-FB4F; }
-
-/* latin */
-@font-face {
-  font-family: 'Heebo';
-  font-style: normal;
-  font-weight: 400;
-  font-display: swap;
-  src: local("Heebo"), local("Heebo-Regular"), url(https://fonts.gstatic.com/s/heebo/v5/NGS6v5_NC0k9P9H2TbFhsqMA.woff2) format("woff2");
-  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
-
 /* cyrillic-ext */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Lora';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WRhyyTh89ZNpQ.woff2) format("woff2");
+  src: local("Lora Regular"), local("Lora-Regular"), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwf7I_FMl_GW8g.woff2) format("woff2");
   unicode-range: U+0460-052F, U+1C80-1C88, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F; }
 
 /* cyrillic */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Lora';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459W1hyyTh89ZNpQ.woff2) format("woff2");
+  src: local("Lora Regular"), local("Lora-Regular"), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMw77I_FMl_GW8g.woff2) format("woff2");
   unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116; }
 
 /* vietnamese */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Lora';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WZhyyTh89ZNpQ.woff2) format("woff2");
+  src: local("Lora Regular"), local("Lora-Regular"), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwX7I_FMl_GW8g.woff2) format("woff2");
   unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB; }
 
 /* latin-ext */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Lora';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WdhyyTh89ZNpQ.woff2) format("woff2");
+  src: local("Lora Regular"), local("Lora-Regular"), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwT7I_FMl_GW8g.woff2) format("woff2");
   unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
 
 /* latin */
 @font-face {
-  font-family: 'Montserrat';
+  font-family: 'Lora';
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: local("Montserrat Regular"), local("Montserrat-Regular"), url(https://fonts.gstatic.com/s/montserrat/v14/JTUSjIg1_i6t8kCHKm459WlhyyTh89Y.woff2) format("woff2");
+  src: local("Lora Regular"), local("Lora-Regular"), url(https://fonts.gstatic.com/s/lora/v14/0QIvMX1D_JOuMwr7I_FMl_E.woff2) format("woff2");
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
+
+/* vietnamese */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v20/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk40e6fwniDtzNAAw.woff) format("woff");
+  unicode-range: U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+1EA0-1EF9, U+20AB; }
+
+/* latin-ext */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v20/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk50e6fwniDtzNAAw.woff) format("woff");
+  unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF; }
+
+/* latin */
+@font-face {
+  font-family: 'Muli';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url(https://fonts.gstatic.com/s/muli/v20/7Aulp_0qiz-aVz7u3PJLcUMYOFnOkEk30e6fwniDtzM.woff) format("woff");
   unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD; }
 
 /*********************************************************
@@ -162,8 +171,8 @@ html {
 
 body {
   background: #fff;
-  color: #111;
-  font-family: "Heebo", sans-serif;
+  color: #222;
+  font-family: "Muli", sans-serif;
   font-size: 1rem;
   font-weight: 300;
   line-height: 1.5; }
@@ -216,21 +225,11 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Montserrat", sans-serif;
+  font-family: "Lora", sans-serif;
+  font-weight: 400;
   font-style: normal;
   line-height: 1.2;
-  margin-bottom: 0.625rem;
-  text-transform: uppercase;
-  letter-spacing: 3px;
-  font-weight: 600; }
-  @media (max-width: 800px) {
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-      letter-spacing: 1px; } }
+  margin-bottom: 0.625rem; }
 
 h1,
 .h1 {
@@ -257,9 +256,7 @@ h6,
   font-size: 1rem; }
 
 p {
-  margin: 0 0 1.25rem 0;
-  font-size: 1.125rem;
-  letter-spacing: 0.05px; }
+  margin: 0 0 1.25rem 0; }
 
 /*********************************************************
     Buttons
@@ -269,7 +266,7 @@ p {
   padding: 0.75rem 2.5rem;
   font-size: 1rem;
   color: #fff;
-  background-color: #111;
+  background-color: #222;
   border: 0;
   border-radius: 3.125rem;
   text-decoration: none;
@@ -289,7 +286,7 @@ p {
   .btn--secondary {
     background-color: #fcfcfc;
     border: 0;
-    color: #111; }
+    color: #222; }
     .btn--secondary:hover, .btn--secondary:focus {
       background-color: #d6d6d6; }
   .btn--muted {
@@ -413,7 +410,7 @@ p {
   position: absolute;
   width: 100%;
   padding: 15px 0;
-  background-color: rgba(17, 17, 17, 0.25);
+  background-color: rgba(34, 34, 34, 0.25);
   z-index: 2;
   -webkit-transition: background-color 0.4s ease-out;
   -o-transition: background-color 0.4s ease-out;
@@ -621,7 +618,7 @@ p {
 *********************************************************/
 .footer {
   position: relative;
-  background: #111;
+  background: #222;
   width: 100%;
   right: 0;
   bottom: 0;
@@ -699,12 +696,14 @@ p {
         margin: 0 auto;
         max-width: 70%; } }
   .hero__title {
-    font-size: 1.75rem;
-    color: #111;
+    font-size: 2rem;
+    color: #222;
     margin-bottom: 1.25rem; }
     @media (min-width: 800px) {
       .hero__title {
-        font-size: 2.375rem; } }
+        font-size: 2.625rem; } }
+  .hero p {
+    font-size: 1rem; }
   .hero__subtitle {
     font-weight: 100;
     margin: 0; }
@@ -781,9 +780,9 @@ textarea {
   padding: 0 0.625rem;
   font-family: inherit;
   font-size: 1rem;
-  color: #111;
+  color: #222;
   background: #fff;
-  border: 1px solid #111;
+  border: 1px solid #222;
   border-radius: 0.25rem;
   outline: none;
   -webkit-transition: 0.2s all ease-out;
@@ -953,7 +952,7 @@ svg > .checkmark-circle {
   stroke-dashoffset: 166;
   stroke-width: 3;
   stroke-miterlimit: 10;
-  stroke: #111;
+  stroke: #222;
   fill: none;
   -webkit-animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
           animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards; }
@@ -1022,7 +1021,7 @@ svg > .checkmark-check {
   left: 3px;
   font-size: 29px;
   line-height: 0.8;
-  color: #111;
+  color: #222;
   -webkit-transition: all 0.2s;
   -o-transition: all 0.2s;
   transition: all 0.2s;
@@ -1063,14 +1062,14 @@ svg > .checkmark-check {
 /* accessibility */
 [type="checkbox"]:checked:focus + label:before,
 [type="checkbox"]:not(:checked):focus + label:before {
-  border: 2px dotted #111; }
+  border: 2px dotted #222; }
 
 label {
   font-size: 1rem; }
 
 /* hover style just for information */
 label:hover:before {
-  border: 2px solid #111 !important; }
+  border: 2px solid #222 !important; }
 
 .grid {
   display: -webkit-box;
@@ -1121,7 +1120,7 @@ label:hover:before {
 .modal {
   position: fixed;
   z-index: 50;
-  background-color: rgba(17, 17, 17, 0.97);
+  background-color: rgba(34, 34, 34, 0.97);
   top: 0;
   bottom: 0;
   left: 0;
