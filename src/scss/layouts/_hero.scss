@@ -76,6 +76,8 @@
 }
 
 .hero__left {
+  height: auto;
+  overflow: auto;
   background: $color-secondary;
   @media (max-width: 800px) {
     background: url("../img/bg3.jpg") center 50% no-repeat;

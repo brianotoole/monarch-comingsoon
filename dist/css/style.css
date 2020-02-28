@@ -204,7 +204,7 @@ a {
     background-color: #264259; }
   .page-section--secondary {
     color: white;
-    background-color: #f1f2ed; }
+    background-color: #fcfcfc; }
   .page-section--white {
     color: black;
     background-color: #fff; }
@@ -266,6 +266,7 @@ p {
   color: #fff;
   background-color: #111;
   border: 0;
+  border-radius: 3.125rem;
   text-decoration: none;
   text-transform: uppercase;
   text-align: center;
@@ -277,11 +278,11 @@ p {
     color: #fff;
     background-color: #0f1a23; }
   .btn--secondary {
-    background-color: #f1f2ed;
+    background-color: #fcfcfc;
     border: 0;
     color: #111; }
     .btn--secondary:hover, .btn--secondary:focus {
-      background-color: #ced2c1; }
+      background-color: #d6d6d6; }
   .btn--muted {
     color: #264259;
     background-color: transparent;
@@ -596,11 +597,11 @@ p {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(241, 242, 237, 0.6);
+    background: rgba(252, 252, 252, 0.6);
     z-index: 1; }
   .hero--bg-gradient {
-    background-color: #f1f2ed;
-    background-image: linear-gradient(120deg, #f1f2ed, #ced2c1); }
+    background-color: #fcfcfc;
+    background-image: linear-gradient(120deg, #fcfcfc, #d6d6d6); }
   .hero__background-image {
     height: 100%; }
   .hero__logo {
@@ -636,7 +637,9 @@ p {
     margin-top: 20px; }
 
 .hero__left {
-  background: #f1f2ed; }
+  height: auto;
+  overflow: auto;
+  background: #fcfcfc; }
   @media (max-width: 800px) {
     .hero__left {
       background: url(../../dist/img/bg3.jpg) center 50% no-repeat;
@@ -644,7 +647,7 @@ p {
       .hero__left:before {
         content: "";
         position: absolute;
-        background: rgba(241, 242, 237, 0.98);
+        background: rgba(252, 252, 252, 0.98);
         left: 0;
         top: 0;
         width: 100%;
@@ -707,7 +710,7 @@ textarea {
   font-size: 1rem;
   color: #111;
   border: 1px solid #111;
-  border-radius: 0;
+  border-radius: 0.25rem;
   outline: none;
   transition: 0.2s all ease-out; }
   input[type="email"]:focus, input[type="email"]:active,
@@ -913,8 +916,8 @@ svg > .checkmark-check {
 [type="checkbox"]:checked + label:after {
   content: "\2713   ";
   position: absolute;
-  top: 0.15em;
-  left: 0.22em;
+  top: 0;
+  left: 4px;
   font-size: 1.3em;
   line-height: 0.8;
   color: #111;
@@ -979,6 +982,9 @@ label:hover:before {
 .full {
   flex-basis: 100%;
   width: 100%; }
+
+.m-btm-20 {
+  margin-bottom: 20px; }
 
 /*********************************************************
     Modal
