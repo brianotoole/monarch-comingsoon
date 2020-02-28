@@ -592,7 +592,8 @@ p {
   height: 100vh; }
   @media (max-width: 800px) {
     .hero {
-      text-align: center; } }
+      text-align: center;
+      height: auto; } }
   .hero--has-overlay:after {
     content: "";
     position: absolute;
@@ -617,11 +618,13 @@ p {
   .hero__content {
     position: relative;
     padding-top: 2.5rem;
+    padding-bottom: 2.5rem;
     z-index: 10;
     font-size: 1.125rem; }
     @media (min-width: 800px) {
       .hero__content {
         padding-top: 0;
+        padding-bottom: 0;
         top: 38%;
         -webkit-transform: translateY(-38%);
                 transform: translateY(-38%);
@@ -633,7 +636,7 @@ p {
         margin: 0 auto;
         max-width: 70%; } }
   .hero__title {
-    font-size: 2.25rem;
+    font-size: 2rem;
     color: #111;
     margin-bottom: 1.25rem; }
     @media (min-width: 800px) {

@@ -8,6 +8,7 @@
   height: 100vh;
   @media (max-width: $bp_md) {
     text-align: center;
+    height: auto;
   }
 
   &--has-overlay {
@@ -48,10 +49,12 @@
   &__content {
     position: relative;
     padding-top: rem(40);
+    padding-bottom: rem(40);
     z-index: 10;
     font-size: rem(18);
     @media (min-width: $bp_md) {
       padding-top: 0;
+      padding-bottom: 0;
       top: 38%;
       transform: translateY(-38%);
       left: 0;
@@ -65,7 +68,7 @@
   }
 
   &__title {
-    font-size: rem(36);
+    font-size: rem(32);
     color: $color-body;
     margin-bottom: rem(20);
     @include bp_md {
