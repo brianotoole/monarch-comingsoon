@@ -7,8 +7,8 @@ require("../scss/style.scss");
 
 require("./form.js");
 
-import MobileMenu from './MobileMenu';
-import Modal from './Modal';
+//import MobileMenu from './MobileMenu';
+//import Modal from './Modal';
 
-var mobileMenu = new MobileMenu();
-var modal = new Modal();
+//var mobileMenu = new MobileMenu();
+//var modal = new Modal();
