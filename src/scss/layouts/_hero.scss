@@ -6,6 +6,9 @@
   flex-wrap: wrap;
   position: relative;
   height: 100vh;
+  @media (max-width: $bp-md) {
+    text-align: center;
+  }
 
   &--has-overlay {
     &:after {
@@ -85,7 +88,7 @@
     &:before {
       content: "";
       position: absolute;
-      background: rgba($color-secondary, 0.98);
+      background: rgba($color-secondary, 0.97);
       left: 0;
       top: 0;
       width: 100%;
@@ -108,7 +111,7 @@
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba($color-body, 0.5);
+    background: rgba($color-body, 0.3);
     z-index: 1;
   }
 }

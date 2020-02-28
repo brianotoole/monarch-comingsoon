@@ -590,6 +590,9 @@ p {
   flex-wrap: wrap;
   position: relative;
   height: 100vh; }
+  @media (max-width: 800px) {
+    .hero {
+      text-align: center; } }
   .hero--has-overlay:after {
     content: "";
     position: absolute;
@@ -647,7 +650,7 @@ p {
       .hero__left:before {
         content: "";
         position: absolute;
-        background: rgba(252, 252, 252, 0.98);
+        background: rgba(252, 252, 252, 0.97);
         left: 0;
         top: 0;
         width: 100%;
@@ -667,7 +670,7 @@ p {
     bottom: 0;
     left: 0;
     width: 100%;
-    background: rgba(17, 17, 17, 0.5);
+    background: rgba(17, 17, 17, 0.3);
     z-index: 1; }
 
 .hero__left,
@@ -709,6 +712,7 @@ textarea {
   font-family: inherit;
   font-size: 1rem;
   color: #111;
+  background: #fff;
   border: 1px solid #111;
   border-radius: 0.25rem;
   outline: none;
@@ -729,14 +733,26 @@ textarea {
   textarea:focus,
   textarea:active {
     border-color: #264259; }
+  @media (max-width: 800px) {
+    input[type="email"],
+    input[type="number"],
+    input[type="password"],
+    input[type="search"],
+    input[type="tel"],
+    input[type="text"],
+    input[type="url"],
+    textarea {
+      border-width: 2px; } }
 
 textarea {
   max-width: 100%;
   height: 80px; }
 
-@media (min-width: 800px) {
-  .form__btn-container {
-    float: right; } }
+.form {
+  padding-bottom: 10px; }
+  @media (min-width: 800px) {
+    .form__btn-container {
+      float: right; } }
 
 .form__input--success {
   border-color: green !important; }
@@ -985,6 +1001,9 @@ label:hover:before {
 
 .m-btm-20 {
   margin-bottom: 20px; }
+
+.tal {
+  text-align: left; }
 
 /*********************************************************
     Modal
