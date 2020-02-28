@@ -18,6 +18,7 @@
   white-space: nowrap;
   cursor: pointer;
   transition: all 0.2s linear;
+  appearance: none;
   &:hover,
   &:focus {
     text-decoration: none;

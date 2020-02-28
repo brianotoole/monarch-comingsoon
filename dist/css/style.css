@@ -278,7 +278,10 @@ p {
   cursor: pointer;
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
-  transition: all 0.2s linear; }
+  transition: all 0.2s linear;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none; }
   .btn:hover, .btn:focus {
     text-decoration: none;
     color: #fff;
