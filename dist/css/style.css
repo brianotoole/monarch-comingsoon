@@ -616,14 +616,16 @@ p {
         width: 155px; } }
   .hero__content {
     position: relative;
-    top: 38%;
-    -webkit-transform: translateY(-38%);
-            transform: translateY(-38%);
-    left: 0;
+    padding-top: 2.5rem;
     z-index: 10;
     font-size: 1.125rem; }
     @media (min-width: 800px) {
       .hero__content {
+        padding-top: 0;
+        top: 38%;
+        -webkit-transform: translateY(-38%);
+                transform: translateY(-38%);
+        left: 0;
         margin: 0 auto;
         max-width: 80%; } }
     @media (min-width: 999px) {

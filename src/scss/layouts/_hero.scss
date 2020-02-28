@@ -47,13 +47,14 @@
 
   &__content {
     position: relative;
-    top: 38%;
-    transform: translateY(-38%);
-    left: 0;
-    //text-align: center;
+    padding-top: rem(40);
     z-index: 10;
     font-size: rem(18);
     @media (min-width: $bp_md) {
+      padding-top: 0;
+      top: 38%;
+      transform: translateY(-38%);
+      left: 0;
       margin: 0 auto;
       max-width: 80%;
     }
