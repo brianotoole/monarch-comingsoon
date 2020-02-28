@@ -12,8 +12,11 @@ h6 {
   line-height: 1.2;
   margin-bottom: rem(10);
   text-transform: uppercase;
-  letter-spacing: 3.5px;
+  letter-spacing: 3px;
   font-weight: 600;
+  @media (max-width: $bp_md) {
+    letter-spacing: 1px;
+  }
 }
 
 h1,

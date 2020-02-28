@@ -221,8 +221,16 @@ h6 {
   line-height: 1.2;
   margin-bottom: 0.625rem;
   text-transform: uppercase;
-  letter-spacing: 3.5px;
+  letter-spacing: 3px;
   font-weight: 600; }
+  @media (max-width: 800px) {
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+      letter-spacing: 1px; } }
 
 h1,
 .h1 {
@@ -691,7 +699,7 @@ p {
         margin: 0 auto;
         max-width: 70%; } }
   .hero__title {
-    font-size: 2rem;
+    font-size: 1.75rem;
     color: #111;
     margin-bottom: 1.25rem; }
     @media (min-width: 800px) {
