@@ -5,10 +5,11 @@
   display: flex;
   flex-wrap: wrap;
   position: relative;
-  height: 100vh;
+  min-height: 100vh;
   @media (max-width: $bp_md) {
     text-align: center;
     height: auto;
+    min-height: auto;
   }
 
   &--has-overlay {
