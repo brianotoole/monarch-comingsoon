@@ -34,8 +34,9 @@
   }
 
   &__logo {
+    width: 150px;
     height: auto;
-    margin: 0 auto rem(40);
+    margin: 0 auto rem(20);
     @include bp_md {
       width: 155px;
     }
@@ -60,7 +61,7 @@
     color: $color-body;
     margin-bottom: rem(20);
     @include bp_md {
-      font-size: rem(48);
+      font-size: rem(42);
     }
   }
 
@@ -77,11 +78,12 @@
 .hero__left {
   background: $color-secondary;
   @media (max-width: 800px) {
-    background: url("../img/bg2.jpg") center 50% no-repeat;
+    background: url("../img/bg3.jpg") center 50% no-repeat;
+    background-size: cover;
     &:before {
       content: "";
       position: absolute;
-      background: rgba($color-secondary, 0.85);
+      background: rgba($color-secondary, 0.98);
       left: 0;
       top: 0;
       width: 100%;
@@ -92,7 +94,7 @@
 
 .hero__right {
   position: relative;
-  background: url("../img/bg2.jpg") center center no-repeat;
+  background: url("../img/bg3.jpg") center center no-repeat;
   background-size: cover;
   @media (max-width: 800px) {
     display: none;

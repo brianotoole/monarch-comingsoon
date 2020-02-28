@@ -5,6 +5,8 @@
 // extract text from webpack to bundled output file
 require("../scss/style.scss");
 
+require("./form.js");
+
 import MobileMenu from './MobileMenu';
 import Modal from './Modal';
 

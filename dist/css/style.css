@@ -572,6 +572,9 @@ p {
   padding: 1.25rem 0 0;
   text-align: center;
   z-index: 2; }
+  @media (max-width: 800px) {
+    .footer {
+      position: relative; } }
   .footer--has-border {
     border-top: 1px solid rgba(255, 255, 255, 0.2); }
   .footer__copyright,
@@ -601,8 +604,9 @@ p {
   .hero__background-image {
     height: 100%; }
   .hero__logo {
+    width: 150px;
     height: auto;
-    margin: 0 auto 2.5rem; }
+    margin: 0 auto 1.25rem; }
     @media (min-width: 800px) {
       .hero__logo {
         width: 155px; } }
@@ -624,7 +628,7 @@ p {
     margin-bottom: 1.25rem; }
     @media (min-width: 800px) {
       .hero__title {
-        font-size: 3rem; } }
+        font-size: 2.625rem; } }
   .hero__subtitle {
     font-weight: 100;
     margin: 0; }
@@ -635,11 +639,12 @@ p {
   background: #f1f2ed; }
   @media (max-width: 800px) {
     .hero__left {
-      background: url(../../dist/img/bg2.jpg) center 50% no-repeat; }
+      background: url(../../dist/img/bg3.jpg) center 50% no-repeat;
+      background-size: cover; }
       .hero__left:before {
         content: "";
         position: absolute;
-        background: rgba(241, 242, 237, 0.85);
+        background: rgba(241, 242, 237, 0.98);
         left: 0;
         top: 0;
         width: 100%;
@@ -647,7 +652,7 @@ p {
 
 .hero__right {
   position: relative;
-  background: url(../../dist/img/bg2.jpg) center center no-repeat;
+  background: url(../../dist/img/bg3.jpg) center center no-repeat;
   background-size: cover; }
   @media (max-width: 800px) {
     .hero__right {
@@ -723,7 +728,8 @@ textarea {
     border-color: #264259; }
 
 textarea {
-  max-width: 100%; }
+  max-width: 100%;
+  height: 80px; }
 
 @media (min-width: 800px) {
   .form__btn-container {
@@ -733,14 +739,16 @@ textarea {
   border-color: green !important; }
 
 .form__input--error {
-  border-color: red !important; }
+  border-color: #ff4848 !important; }
 
 .form-inline {
-  display: flex;
+  display: inline-block;
   margin-bottom: 0;
   vertical-align: middle; }
   .form-inline .form-group {
     display: inline-block; }
+  .form-inline .form-group-block {
+    display: block; }
   .form-inline input {
     width: auto; }
 
@@ -761,6 +769,216 @@ textarea {
     margin-left: -2px;
     border-top-left-radius: 0;
     border-bottom-left-radius: 0; }
+
+input.error {
+  border: 1px solid #ff4848; }
+
+.error-message {
+  display: none;
+  color: #ff4848;
+  font-size: 1rem; }
+
+.success-message {
+  display: none; }
+
+.success-message > div {
+  width: 100%;
+  opacity: 0;
+  -webkit-animation: reveal 1s 1s forwards;
+          animation: reveal 1s 1s forwards; }
+
+/* Appear animation for success message */
+@-webkit-keyframes reveal {
+  0%,
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+@keyframes reveal {
+  0%,
+  75% {
+    opacity: 0; }
+  100% {
+    opacity: 1; } }
+
+/* 'SUCCESS!' check animation */
+svg.checkmark {
+  width: 75px;
+  height: 75px;
+  margin: 2em;
+  text-align: left;
+  border-radius: 50%;
+  stroke-width: 4;
+  stroke: green;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #7ac142;
+  transition: 1s all ease; }
+
+/* Trigger animation we add 'active' class via JS */
+svg.checkmark.active {
+  -webkit-animation: moveupwards 1s 1s forwards;
+          animation: moveupwards 1s 1s forwards; }
+
+/* 'Move upwards' animation below, no need for absolutely positioned
+            elements or transform: translate. We'll create the subtle 'moving up'
+            effect by playing with margins and size. Responsive friendly! */
+@-webkit-keyframes moveupwards {
+  0%,
+  75% {
+    width: 75px;
+    height: 75px;
+    margin: 2em; }
+  100% {
+    width: 50px;
+    height: 50px;
+    margin: 1em; } }
+@keyframes moveupwards {
+  0%,
+  75% {
+    width: 75px;
+    height: 75px;
+    margin: 2em; }
+  100% {
+    width: 50px;
+    height: 50px;
+    margin: 1em; } }
+
+/* Paths inside SVG. Each path will be animated using stroke property
+            and 'stroke' animation */
+svg > .checkmark-circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 3;
+  stroke-miterlimit: 10;
+  stroke: #111;
+  fill: none;
+  -webkit-animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+          animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards; }
+
+svg > .checkmark-check {
+  -webkit-transform-origin: 50% 50%;
+          transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-width: 3;
+  stroke-dashoffset: 48;
+  -webkit-animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+          animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards; }
+
+@-webkit-keyframes stroke {
+  100% {
+    stroke-dashoffset: 0; } }
+
+@keyframes stroke {
+  100% {
+    stroke-dashoffset: 0; } }
+
+/* Sorry IE and Edge users, no SVG animations supported for you,
+          so we'll hide our SVG to prevent empty space gap */
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  .success-message svg {
+    display: none; } }
+
+@supports (-ms-ime-align: auto) {
+  .success-message svg {
+    display: none; } }
+
+/* Base for label styling */
+[type="checkbox"]:not(:checked),
+[type="checkbox"]:checked {
+  position: absolute;
+  left: -9999px; }
+
+[type="checkbox"]:not(:checked) + label,
+[type="checkbox"]:checked + label {
+  position: relative;
+  padding-left: 1.95em;
+  cursor: pointer; }
+
+/* checkbox aspect */
+[type="checkbox"]:not(:checked) + label:before,
+[type="checkbox"]:checked + label:before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 1.25em;
+  height: 1.25em;
+  border: 2px solid #ccc;
+  background: #fff;
+  border-radius: 4px;
+  box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.1); }
+
+/* checked mark aspect */
+[type="checkbox"]:not(:checked) + label:after,
+[type="checkbox"]:checked + label:after {
+  content: "\2713   ";
+  position: absolute;
+  top: 0.15em;
+  left: 0.22em;
+  font-size: 1.3em;
+  line-height: 0.8;
+  color: #111;
+  transition: all 0.2s;
+  font-family: "Lucida Sans Unicode", "Arial Unicode MS", Arial; }
+
+/* checked mark aspect changes */
+[type="checkbox"]:not(:checked) + label:after {
+  opacity: 0;
+  -webkit-transform: scale(0);
+          transform: scale(0); }
+
+[type="checkbox"]:checked + label:after {
+  opacity: 1;
+  -webkit-transform: scale(1);
+          transform: scale(1); }
+
+/* disabled checkbox */
+[type="checkbox"]:disabled:not(:checked) + label:before,
+[type="checkbox"]:disabled:checked + label:before {
+  box-shadow: none;
+  border-color: #bbb;
+  background-color: #ddd; }
+
+[type="checkbox"]:disabled:checked + label:after {
+  color: #999; }
+
+[type="checkbox"]:disabled + label {
+  color: #aaa; }
+
+/* accessibility */
+[type="checkbox"]:checked:focus + label:before,
+[type="checkbox"]:not(:checked):focus + label:before {
+  border: 2px dotted #111; }
+
+/* hover style just for information */
+label:hover:before {
+  border: 2px solid #111 !important; }
+
+.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 0 1 auto; }
+  @media (min-width: 800px) {
+    .grid {
+      margin: 0 -7.5px; } }
+
+@media (min-width: 800px) {
+  .half,
+  .full {
+    padding: 0 7.5px; } }
+
+.half {
+  flex-basis: 50%;
+  width: 50%; }
+  @media (max-width: 800px) {
+    .half {
+      flex-basis: 100%;
+      width: 100%; } }
+
+.full {
+  flex-basis: 100%;
+  width: 100%; }
 
 /*********************************************************
     Modal
