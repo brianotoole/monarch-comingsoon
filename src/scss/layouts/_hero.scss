@@ -73,12 +73,8 @@
     color: $color-body;
     margin-bottom: rem(20);
     @include bp_md {
-      font-size: rem(42);
+      font-size: rem(38);
     }
-  }
-
-  p {
-    font-size: rem(16);
   }
 
   &__subtitle {
