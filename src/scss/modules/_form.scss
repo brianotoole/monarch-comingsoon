@@ -42,7 +42,7 @@ textarea {
   &:active {
     border-color: $color-primary;
   }
-  @media (max-width: $bp-md) {
+  @media (max-width: $bp_md) {
       border-width: 2px;;
   }
 }

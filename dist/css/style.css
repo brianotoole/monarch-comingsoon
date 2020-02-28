@@ -625,6 +625,10 @@ p {
     @media (min-width: 800px) {
       .hero__content {
         margin: 0 auto;
+        max-width: 80%; } }
+    @media (min-width: 999px) {
+      .hero__content {
+        margin: 0 auto;
         max-width: 70%; } }
   .hero__title {
     font-size: 2.25rem;
@@ -645,7 +649,7 @@ p {
   background: #fcfcfc; }
   @media (max-width: 800px) {
     .hero__left {
-      background: url(../../dist/img/bg3.jpg) center 50% no-repeat;
+      background: url(../../dist/img/bg4.jpg) center 50% no-repeat;
       background-size: cover; }
       .hero__left:before {
         content: "";
@@ -658,20 +662,19 @@ p {
 
 .hero__right {
   position: relative;
-  background: url(../../dist/img/bg3.jpg) center center no-repeat;
+  background: url(../../dist/img/bg4.jpg) center center no-repeat;
   background-size: cover; }
   @media (max-width: 800px) {
     .hero__right {
       display: none; } }
   .hero__right:after {
     content: "";
-    position: absolute;
+    background: rgba(0, 0, 0, 0.1);
     top: 0;
-    bottom: 0;
     left: 0;
+    position: absolute;
     width: 100%;
-    background: rgba(17, 17, 17, 0.3);
-    z-index: 1; }
+    height: 100%; }
 
 .hero__left,
 .hero__right {
