@@ -651,7 +651,7 @@ p {
   background: #fcfcfc; }
   @media (max-width: 800px) {
     .hero__left {
-      background: url(../../dist/img/bg4.jpg) center 50% no-repeat;
+      background: none;
       background-size: cover; }
       .hero__left:before {
         content: "";

@@ -87,8 +87,8 @@
   height: auto;
   overflow: auto;
   background: $color-secondary;
-  @media (max-width: 800px) {
-    background: url("../img/bg4.jpg") center 50% no-repeat;
+  @media (max-width: $bp_md) {
+    background: none;
     background-size: cover;
     &:before {
       content: "";
