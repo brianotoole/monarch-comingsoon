@@ -264,6 +264,10 @@ svg > .checkmark-check {
   color: $color-body;
   transition: all 0.2s;
   font-family: "Lucida Sans Unicode", "Arial Unicode MS", Arial;
+  @media (max-width: $bp_md) {
+    top: -4px;
+    left: -2px;
+  }
 }
 /* checked mark aspect changes */
 [type="checkbox"]:not(:checked) + label:after {
