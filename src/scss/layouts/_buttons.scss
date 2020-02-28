@@ -19,6 +19,7 @@
   cursor: pointer;
   transition: all 0.2s linear;
   appearance: none;
+  -webkit-appearance: none;
   &:hover,
   &:focus {
     text-decoration: none;

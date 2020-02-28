@@ -279,9 +279,9 @@ p {
   -webkit-transition: all 0.2s linear;
   -o-transition: all 0.2s linear;
   transition: all 0.2s linear;
-  -webkit-appearance: none;
-     -moz-appearance: none;
-          appearance: none; }
+  -moz-appearance: none;
+       appearance: none;
+  -webkit-appearance: none; }
   .btn:hover, .btn:focus {
     text-decoration: none;
     color: #fff;
