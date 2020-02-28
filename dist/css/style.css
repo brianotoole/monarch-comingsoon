@@ -263,9 +263,7 @@ p {
 *********************************************************/
 .btn {
   display: inline-block;
-  padding: 0 1.875rem;
-  height: 2.8125rem;
-  line-height: 2.8125rem;
+  padding: 0.75rem 2.5rem;
   font-size: 1rem;
   color: #fff;
   background-color: #111;
