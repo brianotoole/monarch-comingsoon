@@ -19,7 +19,7 @@
   "dependencies": {
     "css-loader": "^0.28.10",
     "jquery": "^3.4.1",
-    "lazysizes": "^4.0.1",
+    "lazysizes": "^5.2.1",
     "node-sass": "^4.7.2",
     "postcss-loader": "^2.1.1",
     "sass-loader": "^6.0.7",
